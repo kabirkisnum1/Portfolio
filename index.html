@@ -484,7 +484,7 @@
     <h3>Enter a year</h3>
     <input type="text" id="enter5">
     <button id="check5" onclick="xyz5()">Check</button>
-            <p id="res5"></p>
+    <p id="res5"></p>
                 <script>
         function xyz5()
         {
@@ -496,15 +496,19 @@
                     if (a5%400==0)
                     {
                         document.getElementById("res5").value="A Leap Year"
+                        document.getElementById("res5").innerHTML="A Leap Year"
                     }
                     else
                     document.getElementById("res5").value="Not a Leap Year"
+                    document.getElementById("res5").innerHTML="Not a Leap Year"
                 }
                 else
                 document.getElementById("res5").value="A Leap Year"
+                document.getElementById("res5").innerHTML="A Leap Year"
             }
             else
             document.getElementById("res5").value="Not a Leap Year"
+            document.getElementById("res5").innerHTML="Not a Leap Year"
         }
     </script>
           </div>
