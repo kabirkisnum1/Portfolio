@@ -444,8 +444,24 @@
           </div>
    
           <div>
-            <img src="parispic.jpg">
-            <p>Paris. I have gone to Paris twice. This picture is of the world-famous Eiffel Tower.</p>
+            <h1>Factorial of any number</h1>
+    <h2>Works best with numbers less than 20</h2>
+    <input name="inp3" id="inp3">
+    <button id="check3" onclick="xyz3()">Check</button>
+    <p id="res3"></p>
+            <script>
+        function xyz3()
+        {
+            var x3=parseInt(document.getElementById("inp3").value)
+            var y3=1
+            for (let i3=1; i3<=x; i3++)
+            {
+                y3*=i3
+            }
+            document.getElementById("res").innerHTML="The factorial of "+x3+" is "+y3
+            document.getElementById("res").value="The factorial of "+x3+" is "+y3
+        }
+    </script>
           </div>
           <div>
             <img src="britain.jfif">
