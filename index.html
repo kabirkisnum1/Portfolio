@@ -464,8 +464,22 @@
     </script>
           </div>
           <div>
-            <img src="britain.jfif">
-            <p>London. I have gone here once, and we took a train during our stay to Paris to go there once again.</p>
+    <h1>Sum of first n Natural Numbers</h1>
+    <br><br>
+    <h3>Enter any Number</h3>
+    <br><br>
+    <input name="inp4" id="inp4">
+    <button id="check4" onclick="xyz4()">Check</button>
+    <p id="res4"></p>
+                <script>
+        function xyz4()
+        {
+            var x4=parseInt(document.getElementById("inp4").value);
+            var z4=(x4*(x4+1))/2
+            document.getElementById("res4").value="The sum of the first "+x4+" natural numbers is "+z4
+            document.getElementById("res4").innerHTML="The sum of the first "+x4+" natural numbers is "+z4
+        }
+    </script>
           </div>
           <div>
             <img src="cancun.jpg">
