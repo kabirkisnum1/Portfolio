@@ -379,8 +379,7 @@
 
         <div class="section-title">
           <h2>JavaScript Projects</h2>
-          <p>Places I have traveled to. Includes different US states.</p>
-        </div>
+          <p>My Java Script Projects>
 
        
         <div class="images">
@@ -407,7 +406,40 @@
             }
             document.getElementById("res").innerHTML=output
         }
+              </script>
+              
+              <h1>Detecting if a Number is prime</h1>
+              <h3>Enter any number</h3>
+    <input name="inp" id="inp">
+    <button id="check" onclick="xyz()">Check</button>
+    <p id="res"></p>
+               <script>
+        function xyz()
+        {
+            var x=parseInt(document.getElementById("inp").value)
+            var y=2
+            for (let i=2; i<=x; i++)
+            {
+                if (x%i==0)
+                {
+                    y-=1
+                }
+                y+=1
+            }
+            if (y==x)
+            {
+                document.getElementById("res").value="The number "+x+" is a prime number"
+                document.getElementById("res").innerHTML="The number "+x+" is a prime number"
+            }
+            if (y!=x)
+            {
+                document.getElementById("res").value="The number "+x+" is not a prime number"
+                document.getElementById("res").innerHTML="The number "+x+" is not a prime number"
+            }
+        }
     </script>
+   
+            <h1>Places I have traveled to. Includes US states.</h1>
           </div>
           <div>
             <img src="WhatsApp Image 2020-09-23 at 9.55.34 AM.jpeg">
