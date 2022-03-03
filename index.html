@@ -465,9 +465,7 @@
           </div>
           <div>
     <h1>Sum of first n Natural Numbers</h1>
-    <br><br>
     <h3>Enter any Number</h3>
-    <br><br>
     <input name="inp4" id="inp4">
     <button id="check4" onclick="xyz4()">Check</button>
     <p id="res4"></p>
@@ -482,8 +480,33 @@
     </script>
           </div>
           <div>
-            <img src="cancun.jpg">
-            <p>Cancun, Mexico. I have been here once, and it was very fun with the beach and all.</p>
+    <h1>Checking Leap Years</h1>
+    <label for="enter5">Enter a year</label>
+    <input type="text" id="enter5">
+    <button id="check5" onclick="xyz5()">Check</button>
+    <input id="res5" disabled>
+                <script>
+        function xyz5()
+        {
+            var a5=document.getElementById("enter5").value;
+            if (a5%4==0)
+            {
+                if (a5%100==0)
+                {
+                    if (a5%400==0)
+                    {
+                        document.getElementById("res5").value="A Leap Year"
+                    }
+                    else
+                    document.getElementById("res5").value="Not a Leap Year"
+                }
+                else
+                document.getElementById("res5").value="A Leap Year"
+            }
+            else
+            document.getElementById("res5").value="Not a Leap Year"
+        }
+    </script>
           </div>
           <div>
             <img src="banff.jfif">
