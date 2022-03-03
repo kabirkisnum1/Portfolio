@@ -391,7 +391,7 @@
             <script>
         function xyz()
         {
-            var count=document.getElementById("inp").value
+            var count=parseInt(document.getElementById("inp").value)
             var f1=1
             let output=""
             var f2=1
@@ -431,13 +431,13 @@
             }
             if (y2==x2)
             {
-                document.getElementById("res").value="The number "+x2+" is a prime number"
-                document.getElementById("res").innerHTML="The number "+x2+" is a prime number"
+                document.getElementById("res2").value="The number "+x2+" is a prime number"
+                document.getElementById("res2").innerHTML="The number "+x2+" is a prime number"
             }
             if (y2!=x2)
             {
-                document.getElementById("res").value="The number "+x2+" is not a prime number"
-                document.getElementById("res").innerHTML="The number "+x2+" is not a prime number"
+                document.getElementById("res2").value="The number "+x2+" is not a prime number"
+                document.getElementById("res2").innerHTML="The number "+x2+" is not a prime number"
             }
         }
     </script>
