@@ -102,6 +102,35 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Kabir Khandelwal</h1>
+          <div class="row">
+    <p id="hr"></p>
+    <p style="float: left; margin: 2px">:</p>
+    <p id="mn"></p>
+    <p style="float: left; margin: 2px">:</p>
+    <p id="sec"></p>
+            <script>
+    function rclock()
+    {
+        var hh=new Date().getHours();
+        var mm=new Date().getMinutes();
+        var ss=new Date().getSeconds();
+        if(hh<10)
+        {hh='0'+hh}
+        if(mm<10)
+        {mm='0'+mm}
+        if(ss<10)
+        {ss='0'+ss}
+        document.getElementById("hr").innerHTML=hh
+        document.getElementById("mn").innerHTML=mm
+        document.getElementById("sec").innerHTML=ss
+        refresh();
+    }
+    function refresh()
+    {
+        var r=1000;
+        myt=setTimeout('rclock()',r);
+    }
+    </script>
       <p>I'm <span class="typed" data-typed-items="Coder, Student, cricketer, 6th grader"></span></p>
     </div>
   </section><!-- End Hero -->
