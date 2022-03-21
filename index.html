@@ -575,7 +575,60 @@
     </script>
           </div>
           <div>
-                      
+               <h1>Standard JavaScript Calculator</h1>
+    <table border="2">
+        <tr>
+            <td colspan="4"><input type="text" id="display" style="text-align: right;"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" name="b1" value="1" onclick="display.value +='1'"></td>
+            <td> <input type="button" name="b2" value="2" onclick="display.value +='2'"></td>
+            <td> <input type="button" name="b3" value="3" onclick="display.value +='3'"></td>
+            <td> <input type="button" name="add" value="+" onclick="display.value +='+'"></td>
+
+        </tr>
+        <tr>
+            <td> <input type="button" name="b4" value="4" onclick="display.value +='4'"></td>
+            <td> <input type="button" name="b5" value="5" onclick="display.value +='5'"></td>
+            <td> <input type="button" name="b6" value="6" onclick="display.value +='6'"></td>
+            <td> <input type="button" name="sub" value="-" onclick="display.value +='-'"></td>
+
+        </tr>
+        <tr>
+            <td> <input type="button" name="b7" value="7" onclick="display.value +='7'"></td>
+            <td> <input type="button" name="b8" value="8" onclick="display.value +='8'"></td>
+            <td> <input type="button" name="b9" value="9" onclick="display.value +='9'"></td>
+            <td> <input type="button" name="prod" value="x" onclick="display.value +='*'"></td>
+
+        </tr>
+        <tr>
+            <td> <input type="button" name="clear" value="C" onclick="display.value =''"></td>
+            <td> <input type="button" name="b0" value="0" onclick="display.value +='0'"></td>
+            <td> <input type="button" name="div" value="/" onclick="display.value +='/'"></td>
+            <td> <input type="button" name="equal" value="=" onclick="display.value=eval(display.value)"></td>
+
+        </tr>
+    </table>
+                <style>
+        input[type=button]
+        {
+           font-size: 33px; 
+           border-radius : 30%;
+           padding: 5px;
+           background-color: rgb(233, 153, 49);
+        }
+        td{
+            padding: 5px;
+            background-color: antiquewhite;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        input
+        {
+            font-size: 40px;
+        }
+    </style>
           </div>
           <div>
           </div> 
