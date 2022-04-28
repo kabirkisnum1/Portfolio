@@ -789,7 +789,7 @@
         <a class="two">Surprise</a><br>
         <a class="three">Surprise</a>
     </h1>
-    <div>
+    <div class="jscodehov">
         "You have a Suprprise locked here....<br><br><br>
         Hover over me to unlock your Surprise"
         <p>
@@ -807,7 +807,7 @@
             text-align: center;
             cursor: progress;
         }
-        div{
+        .jscodehov{
             font-family: 'segoe UI';
             font-size:xx-large;
             text-align: center;
@@ -821,6 +821,42 @@
     </style>
     </div>
           <div>
+                <h1>Slideshow</h1>
+    <div class="slides">
+        <img src="spain.jfif" alt="Slide 1">
+        <img src="alaska.jfif" alt="Slide 2">
+        <img src="lasvegas.jfif" alt="Slide 3">
+        <img src="oregon.jfif" alt="Slide 4">
+    </div>
+            <style>
+        h1{
+            text-align: center;
+            font-family: 'lucida sans';
+            color: cyan;
+        }
+        .slides{
+            height: 600px;
+            width:600px;
+            overflow: hidden;
+            float: center;
+            margin: auto;
+        }
+        .slides img{
+            position: absolute;
+            width: 600px;
+            height: auto;
+            border: 2px solid blue;
+            opacity: 0;
+            animation: slides 20s infinite;
+        }
+        @keyframes slides{ 25% {opacity: 1;}
+                            40% {opacity:0}
+                        }
+        .slides img:nth-child(1) {animation-delay: 0s;}
+        .slides img:nth-child(2) {animation-delay: 5s;}
+        .slides img:nth-child(3) {animation-delay: 10s;}
+        .slides img:nth-child(4) {animation-delay: 15s;}
+    </style>
           </div> 
           <div>
           </div>
